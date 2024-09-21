@@ -26,10 +26,105 @@
 <!-- DaisyUI -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- tailwind -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': 'rgba(29, 209, 0, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
 
 
 </head>
 <body>
-    
+    <header>
+        <!-- nav section -->
+<section class="w-[80%] m-auto p-0 mt-14 raleway-font">
+    <div class="flex justify-between items-center">
+        <h2 class="text-3xl text-[#030712] font-extrabold">P-Ticket</h2>
+        <ul id="menu-option" class="lg:flex md:flex sm:flex gap-3 text-[#030712] font-medium text-sm  hidden ">
+            <li><a href=""></a>Home</li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Destination</li>
+            <li><a href=""></a>Search</li>
+        </ul>
+        <button class="bg-btn-primary border-2 border-[#1DD100] rounded-lg px-3 py-1 text-xs text-[#1DD100] lg:flex md:flex sm:flex hidden">Bus<i class="fa-solid fa-bus text-[#1DD100] ml-1"></i></button>
+        <div id="menu-btn" class="lg:hidden md:hidden sm:hidden  flex"><i class="fa-solid fa-bars text-black "></i>
+        </div>
+    </div>
+</section>
+
+<!-- banner section -->
+<section class="w-[80%] m-auto p-0 mt-20 raleway-font mb-20">
+
+    <div
+    class="hero h-[600px] rounded-2xl relative"
+    style="background-image: url(./images/banner.png); ">
+    <div class=" bg-gradient-to-r from-[#030712] to-[#03071264]"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="flex flex-col items-center text-center">
+        <h1 class="mb-5 text-5xl font-bold text-[#FFFFFF]">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+        <p class="mb-5 text-[#FFFFFF] text-xs inter-font">
+            Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .
+        </p>
+        <button class="btn bg-[#1DD100] border-none text-[#030712] text-sm font-bold max-w-[200px]">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+  <!-- cards -->
+   <div class="flex gap-8 lg:mx-24 lg:absolute lg:-bottom-36 lg:flex-row md:flex-row flex-col  " >
+<!-- card1 -->
+<div class="card bg-base-100 w-72 shadow-xl flex flex-row items-center px-8 py-4 border-b-4 border-[#1DD100]">
+   <div>
+    <img src="./images/people.png" alt="">
+   </div> 
+    <div class="card-body ">
+      <h2 class="card-title text-black font-bold text-2xl">500K+</h2>
+      <p class="text-xs">Registered users</p>
+    </div>
+  </div>
+<!-- card2 -->
+<div class="card bg-base-100 w-72 shadow-xl flex flex-row items-center px-8 py-4 border-b-4 border-[#1DD100]">
+    <div>
+     <img src="./images/ticket-cupon.png" alt="">
+    </div> 
+     <div class="card-body ">
+       <h2 class="card-title text-black font-bold text-2xl">1.7 lacks</h2>
+       <p class="text-xs">Tickets sold</p>
+     </div>
+   </div>
+   <!-- card3 -->
+   <div class="card bg-base-100 w-72 shadow-xl flex flex-row items-center px-8 py-4 border-b-4 border-[#1DD100]">
+    <div>
+     <img src="./images/stoppage.png" alt="">
+    </div> 
+     <div class="card-body ">
+       <h2 class="card-title text-black font-bold text-2xl">80K+</h2>
+       <p class="text-xs">Rental partners</p>
+     </div>
+   </div>
+   </div>
+
+</section>
+
+    </header>
+    <!-- header section ends here -->
+     <main>
+
+     </main>
+     <!-- main section ends here -->
+      <footer>
+
+      </footer>
+      <script src="./js/home.js"></script>
 </body>
 </html>
